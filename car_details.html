@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #333; color: #fff; padding: 10px 0; text-align: center; }
+        nav { background-color: #444; padding: 10px; }
+        nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        main { padding: 20px; }
+        footer { background-color: #333; color: #fff; text-align: center; padding: 10px 0; position: fixed; width: 100%; bottom: 0; }
+        .car-details { display: flex; flex-direction: column; align-items: center; }
+        .car-details img { max-width: 100%; height: auto; }
+        .car-details .description, .car-details .specifications { margin: 20px 0; }
+        .contact-button { background-color: #28a745; color: #fff; padding: 10px 20px; border: none; cursor: pointer; }
+        .contact-button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Car Details</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#">Car Details</a>
+    </nav>
+    <main>
+        <div class="car-details">
+            <img src="car-image.jpg" alt="Car Image">
+            <div class="description">
+                <h2>Car Description</h2>
+                <p>This is a detailed description of the car, highlighting its features and benefits.</p>
+            </div>
+            <div class="specifications">
+                <h2>Price and Specifications</h2>
+                <p>Price: $25,000</p>
+                <ul>
+                    <li>Engine: V6</li>
+                    <li>Transmission: Automatic</li>
+                    <li>Mileage: 30,000 miles</li>
+                </ul>
+            </div>
+            <button class="contact-button" onclick="contactSeller()">Contact Seller</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Car Dealership. All rights reserved.</p>
+    </footer>
+    <script>
+        function contactSeller() {
+            alert('Contacting the seller...');
+        }
+    </script>
+</body>
+</html>
